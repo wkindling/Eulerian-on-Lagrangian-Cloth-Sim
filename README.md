@@ -21,6 +21,6 @@ Press "w" "a" "s" "d" to do camera roaming.
 Move your mouse to rotate the view direction. 
 
 #### Team Member
-Jiahao Wen @ <href src="https://github.com/wkindling">wkindling</href>
-Linfeng Du @ <href src="https://github.com/RipperJ">RipperJ </href> 
+Jiahao Wen @ [wkindling](https://github.com/wkindling) 
+Linfeng Du @ [Ripper](https://github.com/RipperJ) 
 Haoran Cheng
