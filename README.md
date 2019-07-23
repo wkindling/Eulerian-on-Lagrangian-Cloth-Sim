@@ -1,4 +1,11 @@
 ## Readme
+Implementation of 'Eulerian-on-Lagrangian Cloth Simulation' on Siggraph 2018.
+
+We referenced code on https://github.com/sueda/eol-cloth and fixed some bugs.
+
+Final result:
+
+<img src="result.png">
 
 ### Installing
 #### Dependencies
