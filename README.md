@@ -5,7 +5,7 @@ We referenced code on https://github.com/sueda/eol-cloth and fixed some bugs.
 
 Final result:
 
-<img src="result.png" width="660%">
+<img src="result.png" width="60%">
 
 ### Installing
 #### Dependencies
