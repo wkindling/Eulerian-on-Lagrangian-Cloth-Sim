@@ -1,4 +1,11 @@
 ## Readme
+Implementation of 'Eulerian-on-Lagrangian Cloth Simulation' on Siggraph 2018.
+
+We referenced code on https://github.com/sueda/eol-cloth and fixed some bugs.
+
+Final result:
+
+<img src="result.png" width="60%">
 
 ### Installing
 #### Dependencies
@@ -21,6 +28,6 @@ Press "w" "a" "s" "d" to do camera roaming.
 Move your mouse to rotate the view direction. 
 
 #### Team Member
-Jiahao Wen
-Linfeng Du
-Haoran Cheng
+Jiahao Wen @ [wkindling](https://github.com/wkindling)
+
+Linfeng Du @ [Ripper](https://github.com/RipperJ) 
