@@ -1,0 +1,60 @@
+
+File opened at Tue Jul 16 12:18:12 2019 by MOSEK version 8.1.0.80.
+Problem
+  Name                   :                 
+  Objective sense        : min             
+  Type                   : QO (quadratic optimization problem)
+  Constraints            : 0               
+  Cones                  : 0               
+  Scalar variables       : 129             
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Quadratic to conic reformulation started.
+Quadratic to conic reformulation terminated. Time: 0.00    
+Presolve started.
+Linear dependency checker started.
+Linear dependency checker terminated.
+Eliminator started.
+Freed constraints in eliminator : 5
+Eliminator terminated.
+Eliminator started.
+Freed constraints in eliminator : 0
+Eliminator terminated.
+Eliminator - tries                  : 2                 time                   : 0.00            
+Lin. dep.  - tries                  : 1                 time                   : 0.00            
+Lin. dep.  - number                 : 0               
+Presolve terminated. Time: 0.00    
+Problem
+  Name                   :                 
+  Objective sense        : min             
+  Type                   : QO (quadratic optimization problem)
+  Constraints            : 0               
+  Cones                  : 0               
+  Scalar variables       : 129             
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 4               
+Optimizer  - solved problem         : the primal      
+Optimizer  - Constraints            : 68
+Optimizer  - Cones                  : 2
+Optimizer  - Scalar variables       : 140               conic                  : 140             
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 0.00              dense det. time        : 0.00            
+Factor     - ML order time          : 0.00              GP order time          : 0.00            
+Factor     - nonzeros before factor : 2346              after factor           : 2346            
+Factor     - dense dim.             : 0                 flops                  : 1.77e+05        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   1.2e+00  1.0e+00  1.5e+00  0.00e+00   -4.521465053e+01  -4.721465053e+01  1.0e+00  0.00  
+1   2.6e-01  2.1e-01  2.2e-01  -8.28e-01  -3.034791269e+01  7.977055270e+00   2.1e-01  0.00  
+2   3.3e-02  2.7e-02  1.6e-01  8.17e-01   -1.653328969e+01  -1.771498953e+01  2.7e-02  0.00  
+3   9.1e-03  7.4e-03  6.9e-02  8.50e-01   -1.653162929e+01  -1.682099642e+01  7.4e-03  0.00  
+4   2.3e-03  1.9e-03  6.1e-03  -4.84e-01  -3.800384989e+01  -3.545061137e+01  1.9e-03  0.00  
+5   3.2e-04  2.7e-04  1.2e-03  1.43e-01   -4.659135780e+01  -4.610751460e+01  2.7e-04  0.00  
+6   3.6e-05  2.9e-05  3.1e-04  7.03e-01   -4.719798888e+01  -4.718291424e+01  2.9e-05  0.00  
+7   4.2e-08  3.4e-08  1.3e-05  9.91e-01   -4.721465050e+01  -4.721465049e+01  3.4e-08  0.00  
+8   1.5e-12  1.2e-12  1.8e-12  1.00e+00   -4.721465053e+01  -4.721465053e+01  1.2e-12  0.00  
+Optimizer terminated. Time: 0.00    
+

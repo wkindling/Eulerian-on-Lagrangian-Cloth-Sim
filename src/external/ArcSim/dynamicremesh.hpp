@@ -1,0 +1,67 @@
+/*
+Copyright ©2013 The Regents of the University of California
+(Regents). All Rights Reserved. Permission to use, copy, modify, and
+distribute this software and its documentation for educational,
+research, and not-for-profit purposes, without fee and without a
+signed licensing agreement, is hereby granted, provided that the
+above copyright notice, this paragraph and the following two
+paragraphs appear in all copies, modifications, and
+distributions. Contact The Office of Technology Licensing, UC
+Berkeley, 2150 Shattuck Avenue, Suite 510, Berkeley, CA 94720-1620,
+(510) 643-7201, for commercial licensing opportunities.
+
+IN NO EVENT SHALL REGENTS BE LIABLE TO ANY PARTY FOR DIRECT,
+INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, INCLUDING
+LOST PROFITS, ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS
+DOCUMENTATION, EVEN IF REGENTS HAS BEEN ADVISED OF THE POSSIBILITY
+OF SUCH DAMAGE.
+
+REGENTS SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+FOR A PARTICULAR PURPOSE. THE SOFTWARE AND ACCOMPANYING
+DOCUMENTATION, IF ANY, PROVIDED HEREUNDER IS PROVIDED "AS
+IS". REGENTS HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT,
+UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+*/
+
+#ifndef DYNAMICREMESH_HPP
+#define DYNAMICREMESH_HPP
+
+#include <map>
+#include "remesh.hpp"
+#include "../cloth.h"
+#include "../utility.h"
+//#include "nearobs.hpp"
+
+class MeshSubset;
+
+void static_remesh(Mesh& mesh);
+
+void dynamic_remesh(Mesh& mesh);
+void dynamic_remesh(MeshSubset& subset, const std::map<Node*, Plane> &planes);
+
+void flip_edges(MeshSubset* subset, vector<Face*>& active_faces,
+	vector<Edge*>* update_edges, vector<Face*>* update_faces);
+
+Mat3x3 compute_face_sizing(Remeshing& remeshing, const Face *face,
+	const std::map<Node*, Plane> &planes, bool debug = false);
+
+Vert *adjacent_vert(const Node *node, const Vert *vert);
+
+double edge_metric(const Vert *vert0, const Vert *vert1);
+
+bool can_collapseForced(const Edge *edge, int i);
+void pass_collapse(RemeshOp op, Node *n);
+bool collapse_conformal(Mesh &mesh, bool &allclear);
+
+bool collapse_nonconformal(Mesh &mesh, bool &allclear);
+int conformalCount(Face *f);
+Node *single_eol_from_face(Face *f);
+Edge *single_conformal_edge_from_face(Face *f);
+Edge *single_nonconformal_edge_from_face(Face *f);
+double face_altitude(Edge* edge, Face* face);
+bool split_illconditioned_faces(Mesh &mesh);
+
+
+
+#endif
