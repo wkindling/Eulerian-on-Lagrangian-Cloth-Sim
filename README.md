@@ -24,5 +24,3 @@ Move your mouse to rotate the view direction.
 Jiahao Wen @ [wkindling](https://github.com/wkindling)
 
 Linfeng Du @ [Ripper](https://github.com/RipperJ) 
-
-Haoran Cheng
