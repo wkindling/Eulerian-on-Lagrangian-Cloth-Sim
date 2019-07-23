@@ -28,6 +28,6 @@ Press "w" "a" "s" "d" to do camera roaming.
 Move your mouse to rotate the view direction. 
 
 #### Team Member
-Jiahao Wen @ [wkindling](https://github.com/wkindling)
+@[wkindling](https://github.com/wkindling)
 
-Linfeng Du @ [Ripper](https://github.com/RipperJ) 
+@[Ripper](https://github.com/RipperJ) 
